@@ -53,5 +53,10 @@
 		"mocha": "^8.1.3",
 		"typescript": "^4.1.2",
 		"vscode-test": "^1.4.1"
-	}
+	},
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/jmihelcic/colored-regions-2.git"
+    },
+    "homepage": "https://github.com/jmihelcic/colored-regions-2/blob/master/README.md"
 }
