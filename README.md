@@ -2,7 +2,9 @@
 
 This package provides a simple way of colorizing regions.
 
-## Features
+<br>
+
+# Features
 
 Customize your regions by providing a `rgba(r, g, b, a)` color, or create a custom `named color` in **user settings** or **package.json** (workspace) and use it.
 
@@ -10,7 +12,9 @@ Customize your regions by providing a `rgba(r, g, b, a)` color, or create a cust
 
 The extension now allows you to define your own `custom regex` for detecting regions, meaning you can customize the region coloring to your own needs.
 
-## Settings
+<br>
+
+# Settings
 
 Settings will be read from (listed by priority):
 
@@ -22,7 +26,9 @@ Settings will be read from (listed by priority):
 
     ![user settings](images/settings-json.png)
 
-## Examples
+<br>
+
+# Examples
 
 ![regions example](images/regions.png)
 
