@@ -1,65 +1,34 @@
-# colored-regions-2 README
+# Colored Regions 2 for Visual Studio Code
 
-This is the README for your extension "colored-regions-2". After writing up a brief description, we recommend including the following sections.
+This package provides a simple way of colorizing regions.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Customize your regions by providing a `rgba(r, g, b, a)` color, or create a custom `named color` in **user settings** or **package.json** (workspace) and use it.
 
-For example if there is an image subfolder under your extension project workspace:
+![features](images/features.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+The extension now allows you to define your own `custom regex` for detecting regions, meaning you can customize the region coloring to your own needs.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Settings
 
-## Requirements
+Settings will be read from (listed by priority):
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1) package.json (workspace)
 
-## Extension Settings
+    ![package settings](images/package-json.png)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+2) user settings
 
-For example:
+    ![user settings](images/settings-json.png)
 
-This extension contributes the following settings:
+## Examples
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+![regions example](images/regions.png)
 
-## Known Issues
+![named colors](images/named_colors.png)
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+![supported regions](images/supported_regions.png)
 
-## Release Notes
 
-Users appreciate release notes as you update your extension.
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

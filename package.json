@@ -1,7 +1,8 @@
 {
 	"name": "colored-regions-2",
+	"publisher": "mihelcic",
 	"displayName": "Colored Regions 2",
-	"description": "add later",
+	"description": "This package provides a simple way of colorizing regions.",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.52.0"
@@ -10,16 +11,27 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:colored-regions-2.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "colored-regions-2.helloWorld",
-				"title": "Hello World"
+		"configuration": {
+			"title": "Colored Regions 2",
+			"properties": {
+				"coloredRegions2.regionRegex" : {
+					"type": "string",
+					"default": "[Rr]egion ?\\[( ?[\\w\\d., ()]+ ?)\\]([\\s\\S]*?)[Ee]nd ?[Rr]egion",
+					"markdownDescription": "Here you can customize the way the plugin searches for regions. This regex finds all ranges of `region - endregion` matches. The first capturing group is the rgba color definition or a custom name defined in Named Colors. The second is the code between the region tags. `The first capturing group must be in rgba format (if it's not a Named Color)`."
+				},
+				"coloredRegions2.namedColors" : {
+					"type": "object",
+					"default": {
+						"MyFavoriteColor": "rgba(79, 44, 115, 0.5)"
+					},
+					"description": "Define your custom colors here."
+				}
 			}
-		]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
