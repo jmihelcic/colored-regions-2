@@ -20,11 +20,11 @@ Settings will be read from (listed by priority):
 
 1) package.json (workspace)
 
-    ![package settings](images/package-json.png)
+![package settings](images/package-json.png)
 
 2) user settings
 
-    ![user settings](images/settings-json.png)
+![user settings](images/settings-json.png)
 
 <br>
 
@@ -36,5 +36,10 @@ Settings will be read from (listed by priority):
 
 ![supported regions](images/supported_regions.png)
 
+<br>
 
+# FAQ
 
+1. How does the `custom regionRegex` work?
+    
+    The regex has two capturing groups. The first captures the color (or your own custom color name) which tells the extension how to color the region `(it MUST be in rgba() format)`. The second captures the text that's between the `region` - `endregion` tags, to calculate the range it needs to color.

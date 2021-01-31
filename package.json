@@ -14,6 +14,10 @@
 		"*"
 	],
 	"main": "./out/extension.js",
+	"keywords": [
+        "regions",
+        "color"
+    ],
 	"contributes": {
 		"configuration": {
 			"title": "Colored Regions 2",
@@ -54,6 +58,10 @@
 		"typescript": "^4.1.2",
 		"vscode-test": "^1.4.1"
 	},
+	"license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jmihelcic/colored-regions-2/issues"
+    },
 	"repository": {
         "type": "git",
         "url": "https://github.com/jmihelcic/colored-regions-2.git"
